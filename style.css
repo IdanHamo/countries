@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(10, 10, 31);
+  font-family: "Rubik", sans-serif;
+}
+
+#inp {
+  width: 250px;
+  border: 3px solid gray;
+  background: rgb(11, 53, 107);
+  border-radius: 15px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+#btn {
+  height: 50px;
+  border: 3px solid gray;
+  background: rgb(153, 152, 152);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  margin-inline-start: 20px;
+}
+
+.contries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-result {
+  width: 150px;
+  height: 150px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 50px;
+  background-color: wheat;
+  font-size: 30px;
+  color: gray;
+  font-family: "Rubik", sans-serif;
+
+  animation: scale 2s linear infinite;
+}
+
+#showAllInp {
+  width: 250px;
+  border: 3px solid gray;
+  background: rgb(6, 143, 161);
+  border-radius: 15px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+#new {
+  width: 75px;
+  height: 50px;
+  border: 3px solid gray;
+  background: rgb(3, 131, 124);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  margin-inline-start: 40px;
+}
+li {
+  list-style: none;
+}
+
+#points {
+  margin-block-end: 50px;
+}
+.point-container {
+  min-width: 100px;
+  border: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 50px;
+  background-color: rgb(89, 238, 248);
+  font-size: 30px;
+  color: gray;
+  font-family: "Rubik", sans-serif;
+}
+p {
+  color: brown;
+  font-size: 25px;
+}
+
+#showAll {
+  border: 2px solid orange;
+  border-radius: 4px;
+  font-size: 20px;
+  color: orangered;
+  background-color: rgb(255, 136, 0);
+  margin-top: 50px;
+}
+#showAllDiv {
+  margin-block-start: 20px;
+  color: brown;
+  font-size: 17px;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  #inp {
+    width: 170px;
+  }
+  #showAllInp {
+    width: 170px;
+  }
+}
